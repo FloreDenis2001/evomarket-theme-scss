@@ -1,0 +1,10 @@
+.carousel{
+    white-space: nowrap;
+  overflow: hidden;
+    object-fit: cover;
+    &__img{
+        height: 20rem;
+        width: calc(100%/1);
+    }
+}
+

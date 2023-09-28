@@ -1,0 +1,14 @@
+{
+  "name": "evomarket-theme-with-sass-and-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+       "compile:sass":"node-sass scss/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

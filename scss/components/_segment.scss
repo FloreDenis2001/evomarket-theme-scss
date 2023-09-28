@@ -1,0 +1,17 @@
+#segment{
+    height: 30rem;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-products{
+    display: flex;
+    flex-direction: row;
+    min-height: 25rem;
+    height: 50rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    object-fit: cover;
+}

@@ -1,0 +1,35 @@
+// ABSTRACTS 
+
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+//BASE 
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// COMPONENTS 
+@import "components/button";
+@import "components/card";
+@import "components/search-box";
+@import "components/carousel";
+@import "components/segment";
+@import "components/category";
+
+
+
+
+// LAYOUT
+@import "layout/footer";
+@import "layout/header";
+@import "layout/posters";
+
+// PAGES 
+@import "pages/home";
+
+

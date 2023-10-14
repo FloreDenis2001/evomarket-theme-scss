@@ -1,8 +1,11 @@
 #segment{
-    height: 30rem;
-    padding-block: 1rem;
+    max-height: 31rem;
     display: flex;
     flex-direction: column;
+    background-color: $color-white;
+    margin-block: 0.5rem;
+    padding-bottom: 1rem;
+
 }
 
 .all-products{

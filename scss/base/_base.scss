@@ -12,8 +12,9 @@ html{
 
 body{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(240, 239, 239);
+    font-family:$font-family-secondary;
+    background-color:rgb(255, 255, 255);
+    font-weight: 800;
 }
 
 img{

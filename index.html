@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/a4fb4fc945.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,14 +34,90 @@
 
    </header>
 
-   <aside class="posters">
-    <div class="wrapper">
-        <div class="carousel">
-            <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping">
-            <img class="carousel__img" src="img//gantavya-bhatt-sYkqkfwyJaQ-unsplash.jpg" alt="free-shipping">
-            <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping">
-        </div>
+<aside class="navigation__mobile">
+    <ul class="navigation__mobile__list">
+        <li>
+            <a class="navigation__mobile__link__active" href="#home"><i class="bx bx-home-smile"></i></a>
+        </li>
+
+        <li>
+            <a class="navigation__mobile__link" href="#about"><i class='bx bxs-category-alt' ></i></a>
+        </li>
+
+        <li>
+            <a href="#skills" class="navigation__mobile__link"><i class='bx bxs-cart' ></i></a>
+        </li>
+
+        <li>
+            <a href="#project" class="navigation__mobile__link"><i class='bx bxs-heart' ></i></a>
+        </li>
+
+        <li>
+            <a href="#contact" class="navigation__mobile__link"><i class='bx bxs-user'></i></a>
+        </li>
+
+
+    </ul>
+</aside>
+
+<aside class="posters">
+   <div class="swiper mySwiper-posters">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping"></div>
+      <div class="swiper-slide"> <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping"> </div>
+      <div class="swiper-slide"> <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping"> </div>
+      <div class="swiper-slide"> <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping"> </div>
+      <div class="swiper-slide"> <img class="carousel__img" src="img/Banner-Comanda-Online-Transport-Gratuit.png" alt="free-shipping"> </div>
+
+    </div>  
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
     </div>
+  </div>
+</aside>
+
+
+   <aside class="categorys">
+    <h2 class="heading__secondary">Categorys</h2>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper categorys__slide">
+          <div class="swiper-slide ">
+            <section class="categorys__item">
+                <img class="categorys__img" src="./img/iphone.jpg"  alt="">
+                <button class="categorys__phones-title">Table</p>
+             </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="categorys__item">
+                <img class="categorys__img" src="./img/iphone.jpg"  alt="">
+                <button class="categorys__phones-title">Table</p>
+             </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="categorys__item">
+                <img class="categorys__img" src="./img/iphone.jpg"  alt="">
+                <button class="categorys__phones-title">Table</p>
+             </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="categorys__item">
+                <img class="categorys__img" src="./img/iphone.jpg"  alt="">
+                <button class="categorys__phones-title">Table</p>
+             </section>
+          </div>
+          <div class="swiper-slide">
+            <section class="categorys__item">
+                <img class="categorys__img" src="./img/iphone.jpg"  alt="">
+                <button class="categorys__phones-title">Table</p>
+             </section>
+          </div>
+
+        </div>
+      </div>
    </aside>
 
 
@@ -46,45 +125,72 @@
     <div id="segment">
         <h2 class="heading__secondary">Just for you</h2>
         <div class="all-products">
-
-
-        <div class="card">
-            <img class="card__img" src="./img/product.png" alt="">
-            <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-            <div class="card__stock">
-                <i class="fa-solid fa-square-check"></i> 
-                <p> in stock </p>
-            </div>
-
-            <div class="card__stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-
-            <p class="card__price">$1500</p>
-            <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
-
-
-        <div class="card">
-            <img class="card__img" src="./img/product.png" alt="">
-            <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-            <div class="card__stock">
-                <i class="fa-solid fa-square-check"></i> 
-                <p> in stock </p>
-            </div>
-            <div class="card__stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-
-            <p class="card__price">$1500</p>
-            <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
+            <div class="swiper mySwiper-products">
+                <div class="swiper-wrapper categorys__slide">
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+            
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
 
        </div>
     </div>
@@ -92,110 +198,161 @@
     <div id="segment">
         <h2 class="heading__secondary">Pick of the day</h2>
         <div class="all-products">
-            <div class="card">
-                <img class="card__img" src="./img/product.png" alt="">
-                <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-                <div class="card__stock">
-                    <i class="fa-solid fa-square-check"></i> 
-                    <p> in stock </p>
+            <div class="swiper mySwiper-products">
+                <div class="swiper-wrapper categorys__slide">
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+            
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+        
                 </div>
-                <div class="card__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-    
-                <p class="card__price">$1500</p>
-                <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div>
+              </div>
 
-            <div class="card">
-                <img class="card__img" src="./img/product.png" alt="">
-                <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-                <div class="card__stock">
-                    <i class="fa-solid fa-square-check"></i> 
-                    <p> in stock </p>
-                </div>
-                <div class="card__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-    
-                <p class="card__price">$1500</p>
-                <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div>
-           </div>
+       </div>
         </div>
 
     <div id="segment">
         <h2 class="heading__secondary">Best Deals</h2>
         <div class="all-products">
-            <div class="card">
-                <img class="card__img" src="./img/product.png" alt="">
-                <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-                <div class="card__stock">
-                    <i class="fa-solid fa-square-check"></i> 
-                    <p> in stock </p>
+            <div class="swiper mySwiper-products">
+                <div class="swiper-wrapper categorys__slide">
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+            
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <img class="card__img" src="./img/product.png" alt="">
+                        <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
+                        <div class="card__stock">
+                            <i class="fa-solid fa-square-check"></i> 
+                            <p> in stock </p>
+                        </div>
+            
+                        <div class="card__stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+            
+                        <p class="card__price">$1500</p>
+                        <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                  </div>
+        
                 </div>
-                <div class="card__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-    
-                <p class="card__price">$1500</p>
-                <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div> <div class="card">
-                <img class="card__img" src="./img/product.png" alt="">
-                <p class="card__title">Apple Iphone 13,512GB, 5G, Purple </p>
-                <div class="card__stock">
-                    <i class="fa-solid fa-square-check"></i> 
-                    <p> in stock </p>
-                </div>
-                <div class="card__stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-    
-                <p class="card__price">$1500</p>
-                <button class="card__button--buy"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div>
-        </div>
+              </div>
+
+       </div>
     </div>
 
 
    </main>
 
-   <aside class="categorys">
-    <h2 class="heading__secondary">Categorys</h2>
-    <div class="categorys__sections">
-     <section class="categorys__item">
-        <img class="categorys__img" src="./img/iphone.jpg"  alt="">
-        <button class="categorys__phones-title">Table</p>
-     </section>
-     <section class="categorys__item">
-        <img class="categorys__img" src="./img/iphone.jpg"  alt="">
-        <button class="categorys__phones-title">Phones</p>
-     </section>
-     <section class="categorys__item">
-        <img class="categorys__img" src="./img/iphone.jpg"  alt="">
-        <button class="categorys__phones-title">Desktop</p>
-     </section>
-    </div>
-   </aside>
 
 
-   <footer>
-        <p>Create By Flore Denis</p>
-   </footer>
+
+ 
 
 </body>
 
-<script src="./script/script.js"></script>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+ <script src="./script/script.js"></script>
 </html>

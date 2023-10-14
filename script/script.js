@@ -1,27 +1,73 @@
-const carousel=document.querySelector(".carousel");
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+});
+
+var swiper = new Swiper(".mySwiper-products", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+});
+
+var swiper = new Swiper(".mySwiper-posters", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
+});
 
 
-
-
-let isDragStart=false,prevPageX,prevScrollLeft;
-
-const dragStart=(e)=>{
-    isDragStart=true;
-    prevPageX=e.pageX;
-    prevScrollLeft=carousel.scrollLeft;
-}
-
-
-const dragging=(e)=>{
-    if(!isDragStart) return;
-    e.preventDefault();
-    let positionDiff=e.pageX-prevPageX;
-    carousel.scrollLeft=prevScrollLeft-positionDiff;
-}
-const dragStop=()=>{
-    isDragStart=false;
-}
-
-carousel.addEventListener("mousedown",dragStart);
-carousel.addEventListener("mousemove",dragging);
-carousel.addEventListener("mouseup",dragStop);

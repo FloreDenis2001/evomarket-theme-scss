@@ -31,7 +31,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper-products", {
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 10,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -57,6 +57,7 @@ var swiper = new Swiper(".mySwiper-products", {
 });
 
 var swiper = new Swiper(".mySwiper-posters", {
+    slidesPerView:1,
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {

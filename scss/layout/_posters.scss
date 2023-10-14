@@ -1,5 +1,13 @@
-.wrapper{
-  white-space: nowrap;
-  overflow: hidden;
+.posters{
+  background-color: red;
+  max-height: 30rem;
+  &__container{
+    max-height: 20rem;
+    background-color: greenyellow;
+  }
 
+}
+
+.carousel__img{
+  max-height: 25rem;
 }

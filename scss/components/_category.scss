@@ -2,8 +2,8 @@
     margin-bottom: 0.3rem;
   background-color: $color-white;
   padding-bottom: 2rem;
+  max-height: 25rem;
      &__sections{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +36,7 @@
     }
 
 &__slide{
-    margin-top: 1rem;
-    margin-left: 1.5rem;
+    max-height: 15rem;
 }
 
 }

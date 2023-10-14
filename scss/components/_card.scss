@@ -1,7 +1,6 @@
 .card{
     width:16rem;
     min-height: 22rem;
-    margin-inline: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4fr 3fr repeat(2, 0.5fr) 2fr;
@@ -9,10 +8,13 @@
     grid-row-gap: 0px;
     max-height: 19rem;
     padding: 0.3rem;
-    box-shadow: 1px 2px 5px 5px rgba(153, 146, 146, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-   position: relative;
-
+    position: relative;
+    border: 1px solid rgba(197, 83, 83, 0.644);
+    margin-top: 3rem;
+    padding: 1rem;
+    margin-left: 2rem;
     &__img{
         max-height: 10rem;
         width: 100%;
@@ -107,3 +109,5 @@
         }
     }
 }
+
+

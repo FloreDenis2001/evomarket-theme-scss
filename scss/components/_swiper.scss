@@ -1,25 +1,23 @@
 
 .swiper {
     width: 100%;
-    height: 100%;
+   
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
-    margin: none;
-    width: 25%;
+    max-height: 80%;
+  }
+
+  .swiper-wrapper{
+    max-height: 30rem;
   }
   
-  .carousel__img{
-    min-height: 25rem;
-    max-height: 25rem;
-  }
+
 
   .swiper-slide img {
     width: 100%;

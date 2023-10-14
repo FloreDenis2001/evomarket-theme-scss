@@ -12,6 +12,13 @@
         max-width: 59rem;
     }
 
+    @include respond(desktop-normal){
+        min-width: 70rem;
+    }
+    @include respond(big-desktop){
+        min-width: 90rem;
+    }
+
     &__input {
         position: absolute;
         width: 100%;

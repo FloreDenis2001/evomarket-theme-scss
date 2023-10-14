@@ -44,7 +44,7 @@ img {
 }
 
 .heading__secondary {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0;
   padding-top: 1.5rem;
   margin-left: 1rem;
@@ -140,6 +140,7 @@ button {
   margin-top: 0.5rem;
   padding: 0.1rem;
   margin-left: 0.3rem;
+  cursor: pointer;
 }
 .card__img {
   max-height: 10rem;

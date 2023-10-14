@@ -135,9 +135,8 @@ button {
   position: relative;
   border: 1px solid rgba(197, 83, 83, 0.644);
   margin-top: 3rem;
-  padding: 1rem;
+  padding: 0.3rem;
   padding-bottom: 1.5rem;
-  margin-left: 2rem;
 }
 .card__img {
   max-height: 10rem;
@@ -370,12 +369,10 @@ header {
 }
 
 .posters {
-  background-color: red;
   max-height: 30rem;
 }
 .posters__container {
   max-height: 20rem;
-  background-color: greenyellow;
 }
 
 .carousel__img {

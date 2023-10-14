@@ -111,6 +111,10 @@ img {
   background: #fa4e4c;
 }
 
+.mySwiper-products {
+  margin-left: 2rem;
+}
+
 button {
   border: none;
   color: white;
@@ -231,7 +235,6 @@ button {
   height: 100%;
   flex: 1;
   border: none;
-  background-color: #dfdfdf;
   outline: none;
   color: #6b6b6b;
   border-radius: 10rem;

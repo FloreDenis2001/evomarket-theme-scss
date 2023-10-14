@@ -1,13 +1,25 @@
-#segment{
+.segment {
     max-height: 32rem;
     display: flex;
     flex-direction: column;
     background-color: $color-white;
     margin-block: 0.5rem;
 
+    @include respond(tablet-landscape){
+        max-height: 40rem;
+    }
+
+    @include respond(desktop-normal) {
+        min-height: 36rem;
+        max-height: 40rem;
+    }
+    @include respond(big-desktop) {
+        min-height: 36rem;
+        max-height: 40rem;
+    }
 }
 
-.all-products{
+.all-products {
     display: flex;
     flex-direction: row;
     min-height: 25rem;

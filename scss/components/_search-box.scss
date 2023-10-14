@@ -1,14 +1,18 @@
-.search-box{
+.search-box {
     width: 100%;
     height: 4rem;
-    width: 60rem;
+    width: 50rem;
     display: flex;
     align-items: center;
     background-origin: border-box;
     background-clip: padding-box, border-box;
     position: relative;
+    max-width: 40rem;
+    @include respond(tablet-portrait){
+        max-width: 59rem;
+    }
 
-    &__input{
+    &__input {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -16,13 +20,13 @@
         border: none;
         outline: none;
         color: #6b6b6b;
-        border-radius: 10rem ;
+        border-radius: 10rem;
         padding-left: 2rem;
         font-family: $font-family-secondary;
         font-weight: 800;
-    
+
     }
-    
+
     &__button {
         position: absolute;
         background: $color-secondary;
@@ -36,6 +40,5 @@
         right: 1rem;
     }
 
-    
-}
 
+}

@@ -1,10 +1,21 @@
-.heading{
+.heading {
 
-    &__secondary{
-        font-size:2rem;
+    &__secondary {
+        font-size: 2rem;
         margin: 0;
         padding-top: 1.5rem;
         margin-left: 1rem;
         padding-bottom: 1rem;
+        @include respond(tablet-landscape) {
+            padding: none;
+            font-size: 3rem;
+        }
+        @include respond(tablet-portrait) {
+            font-size: 2.5rem;
+        }
+       
+        @include respond(desktop-normal) {
+            font-size: 3rem;
+        }
     }
 }

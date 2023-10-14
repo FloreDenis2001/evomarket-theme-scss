@@ -1,10 +1,10 @@
 /*
 
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
+   0 - 600px:      Default
+   600 - 900px:    Tablet portrait
+   900 - 1200px:   Tablet landscape
+   1200 - 1800px:  Desktop Normal
+   1800px + :      Big desktop
 
 $breakpoint arguement choices:
 - phone
@@ -21,7 +21,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500;1,900&display=swap");
 *,
-*::after, *::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -29,6 +30,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
+  background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -36,7 +38,6 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Red Hat Display", sans-serif;
   font-weight: 800;
-  padding-bottom: 10rem;
 }
 
 img {
@@ -50,6 +51,22 @@ img {
   margin-left: 1rem;
   padding-bottom: 1rem;
 }
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .heading__secondary {
+    padding: none;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .heading__secondary {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .heading__secondary {
+    font-size: 3rem;
+  }
+}
 
 .swiper {
   width: 100%;
@@ -61,10 +78,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper-wrapper {
-  max-height: 30rem;
 }
 
 .swiper-slide img {
@@ -126,6 +139,7 @@ button {
 .card {
   width: 16rem;
   min-height: 22rem;
+  max-width: 18rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 4fr 3fr repeat(2, 0.5fr) 2fr;
@@ -142,11 +156,52 @@ button {
   margin-left: 0.3rem;
   cursor: pointer;
 }
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .card {
+    padding: 0.1rem;
+    min-height: 25rem;
+    max-height: 25rem;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card {
+    padding: 0.1rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    min-width: 20rem;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .card {
+    padding: 0.1rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    min-width: 20rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card {
+    padding: 0.1rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    min-width: 20rem;
+  }
+}
 .card__img {
   max-height: 10rem;
   width: 100%;
   grid-row: 1/1;
   grid-column: 1/-1;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__img {
+    max-height: 15rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__img {
+    max-height: 15rem;
+  }
 }
 .card__title {
   font-size: 1.4rem;
@@ -156,6 +211,16 @@ button {
   white-space: pre-wrap;
   overflow-wrap: break-word;
   padding-top: 5px;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__title {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__title {
+    font-size: 1.7rem;
+  }
 }
 .card__stock {
   display: flex;
@@ -167,9 +232,29 @@ button {
   font-weight: 800;
   color: green;
 }
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__stock {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__stock {
+    font-size: 1.6rem;
+  }
+}
 .card__stock i {
   color: green;
   margin-right: 2px;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__stock i {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__stock i {
+    font-size: 1.6rem;
+  }
 }
 .card__stars {
   display: flex;
@@ -179,6 +264,16 @@ button {
   font-size: 1.4rem;
   grid-row: 4/5;
   grid-column: 1/2;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__stars {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__stars {
+    font-size: 1.6rem;
+  }
 }
 .card__stars i {
   color: goldenrod;
@@ -194,10 +289,20 @@ button {
   grid-column: 1/2;
   color: rgb(255, 81, 47);
 }
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__price {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__price {
+    font-size: 3rem;
+  }
+}
 .card__button--buy {
-  grid-row: 5/-1;
-  margin-left: 2.5rem;
-  grid-column: 2/3;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
   background: linear-gradient(180deg, #ff7f7b 0%, #fa4e4c 54%);
   color: white;
   font-weight: 800;
@@ -206,6 +311,20 @@ button {
   height: 3rem;
   border: none;
   border-radius: 5px 0px 5px 0px;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__button--buy {
+    width: 5rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__button--buy {
+    width: 5rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
 }
 .card__fav {
   cursor: pointer;
@@ -216,6 +335,26 @@ button {
   color: #ffffff;
   -webkit-text-stroke: 0.4vw #1b1b1b;
 }
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .card__fav {
+    -webkit-text-stroke: 0.2vw #1b1b1b;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .card__fav {
+    -webkit-text-stroke: 0.2vw #1b1b1b;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .card__fav {
+    -webkit-text-stroke: 0.1vw #1b1b1b;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .card__fav {
+    -webkit-text-stroke: 0.1vw #1b1b1b;
+  }
+}
 .card__fav:hover, .card__fav:active {
   color: #fa4e4c;
 }
@@ -223,12 +362,18 @@ button {
 .search-box {
   width: 100%;
   height: 4rem;
-  width: 60rem;
+  width: 50rem;
   display: flex;
   align-items: center;
   background-origin: border-box;
   background-clip: padding-box, border-box;
   position: relative;
+  max-width: 40rem;
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .search-box {
+    max-width: 59rem;
+  }
 }
 .search-box__input {
   position: absolute;
@@ -256,12 +401,29 @@ button {
   right: 1rem;
 }
 
-#segment {
+.segment {
   max-height: 32rem;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   margin-block: 0.5rem;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .segment {
+    max-height: 40rem;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .segment {
+    min-height: 36rem;
+    max-height: 40rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .segment {
+    min-height: 36rem;
+    max-height: 40rem;
+  }
 }
 
 .all-products {
@@ -281,6 +443,26 @@ button {
   background-color: #ffffff;
   padding-bottom: 2rem;
   max-height: 25rem;
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .categorys {
+    display: none;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .categorys {
+    display: none;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .categorys {
+    display: none;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .categorys {
+    display: none;
+  }
 }
 .categorys__sections {
   display: flex;
@@ -308,10 +490,56 @@ button {
 .categorys__bullets {
   margin-top: 20px;
 }
-.categorys__slide {
-  max-height: 15rem;
-}
 
+.navigation__desktop {
+  display: none;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  max-width: 16rem;
+}
+.navigation__desktop__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.navigation__desktop__link {
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .navigation__desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .navigation__desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .navigation__desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .navigation__desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .navigation__mobile {
   margin-bottom: 2rem;
   width: 90%;
@@ -327,12 +555,47 @@ button {
   border: 2px solid #fa4e4c;
   border-radius: 10rem;
 }
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .navigation__mobile {
+    top: 35%;
+    left: 0.5rem;
+    height: 40%;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .navigation__mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .navigation__mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .navigation__mobile {
+    display: none;
+  }
+}
 .navigation__mobile__list {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+}
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .navigation__mobile__list {
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navigation__mobile__link {
   color: #3b3b3b;
@@ -361,6 +624,38 @@ header {
   background-image: linear-gradient(360deg, #fa4e4c 0%, #ff7f7b 54%);
   padding: 1rem;
 }
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 
 .logo {
   display: flex;
@@ -368,16 +663,60 @@ header {
   justify-content: center;
   height: 7rem;
   margin-right: 1rem;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logo img {
   filter: brightness(0) invert(100%);
 }
-
-.posters {
-  max-height: 30rem;
-}
-.posters__container {
-  max-height: 20rem;
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .logo img {
+    height: 70%;
+  }
 }
 
-.carousel__img {
-  max-height: 25rem;
+.posters img {
+  max-height: 55rem;
+  align-items: flex-end;
+}
+@media only screen and (min-width: 56.25em) and (max-width: 112.5em) {
+  .posters img {
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+  }
+}
+@media only screen and (min-width: 75em) and (max-width: 112.5em) {
+  .posters img {
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .posters img {
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

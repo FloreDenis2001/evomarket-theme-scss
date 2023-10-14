@@ -1,23 +1,24 @@
 *,
-*::after,*::before{
-    margin:0;
+*::after,
+*::before {
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-html{
-    font-size: 62.5%;  // 1rem = 10px 
+html {
+    font-size: 62.5%;
+    background-color: rgb(255, 255, 255) // 1rem = 10px 
 }
 
 
-body{
+body {
     box-sizing: border-box;
-    background-color:rgb(255, 255, 255);
-    font-family:$font-family-secondary;
+    background-color: rgb(255, 255, 255);
+    font-family: $font-family-secondary;
     font-weight: 800;
-    padding-bottom: 10rem;
 }
 
-img{
+img {
     max-height: 70%;
 }

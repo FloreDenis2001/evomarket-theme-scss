@@ -1,11 +1,19 @@
-.posters{
-  max-height: 30rem;
-  &__container{
-    max-height: 20rem;
+.posters img{
+  max-height: 55rem;
+
+  align-items: flex-end;
+
+
+  @include respond(tablet-landscape){
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
   }
-
-}
-
-.carousel__img{
-  max-height: 25rem;
+  @include respond(desktop-normal){
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+  }
+  @include respond(big-desktop){
+    width: 80%;
+    border-radius: 0 0 5rem 5rem;
+  }
 }

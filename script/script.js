@@ -3,12 +3,17 @@ const progressContent = document.querySelector(".autoplay-progress span");
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 3,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     breakpoints: {
+
+        400:{
+            slidesPerView: 3.3,
+            spaceBetween: 3,
+        },
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -26,12 +31,16 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper-products", {
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     breakpoints: {
+        400:{
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
       640: {
         slidesPerView: 2,
         spaceBetween: 20,

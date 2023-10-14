@@ -61,7 +61,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 80%;
 }
 
 .swiper-wrapper {
@@ -134,9 +133,9 @@ button {
   border-radius: 5px;
   position: relative;
   border: 1px solid rgba(197, 83, 83, 0.644);
-  margin-top: 3rem;
-  padding: 0.3rem;
-  padding-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0.1rem;
+  margin-left: 0.3rem;
 }
 .card__img {
   max-height: 10rem;
@@ -197,18 +196,18 @@ button {
   background: linear-gradient(180deg, #ff7f7b 0%, #fa4e4c 54%);
   color: white;
   font-weight: 800;
-  font-size: 1.4rem;
-  width: 3rem;
-  height: 2.5rem;
+  font-size: 1.6rem;
+  width: 4rem;
+  height: 3rem;
   border: none;
   border-radius: 5px 0px 5px 0px;
 }
 .card__fav {
   cursor: pointer;
   position: absolute;
-  right: 1rem;
-  font-size: 2rem;
-  top: 1rem;
+  right: 0.6rem;
+  font-size: 2.5rem;
+  top: 0.4rem;
   color: #ffffff;
   -webkit-text-stroke: 0.4vw #1b1b1b;
 }

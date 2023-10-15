@@ -1,7 +1,6 @@
 // ABSTRACTS 
 
 
-@import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -19,9 +18,9 @@
 @import "components/card";
 @import "components/search-box";
 @import "components/segment";
-@import "components/category";
+@import "components/meniuBar";
 @import "components/navigation";
-
+@import "components/category";
 
 
 
@@ -29,6 +28,7 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/posters";
+@import "layout/mainarea";
 
 // PAGES 
 @import "pages/home";

@@ -8,16 +8,13 @@
     background-clip: padding-box, border-box;
     position: relative;
     max-width: 40rem;
-    @include respond(tablet-portrait){
-        max-width: 59rem;
+    @include respond(tab-port){
+        max-width: 30rem;
     }
-
-    @include respond(desktop-normal){
-        min-width: 70rem;
-    }
-    @include respond(big-desktop){
-        min-width: 90rem;
-    }
+    @include respond(phone){
+         max-width:25rem;   
+ }
+ 
 
     &__input {
         position: absolute;

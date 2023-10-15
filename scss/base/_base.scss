@@ -7,8 +7,12 @@
 }
 
 html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     font-size: 62.5%;
-    background-color: rgb(255, 255, 255) // 1rem = 10px 
+    background-color: rgb(255, 255, 255);
+     // 1rem = 10px 
 }
 
 
@@ -17,6 +21,7 @@ body {
     background-color: $color-black;
     font-family: $font-family-secondary;
     font-weight: 800;
+    overflow-x: hidden;
 }
 
 img {

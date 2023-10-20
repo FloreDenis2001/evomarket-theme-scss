@@ -13,45 +13,46 @@ var swiper = new Swiper(".mySwiper--posters", {
 
 var swiper;
 
-function initSwiper() {
-  var screenWidth = window.innerWidth;
-
-  var slidesPerView = 4; // Numărul inițial de carduri pe slide
-
-  if (screenWidth <= 900) {
-    slidesPerView = 2; // Pentru tablete, afișează 2 carduri pe slide
-  }
-
-  if (screenWidth <= 600) {
-    slidesPerView = 1; // Pentru telefoane, afișează 1 card pe slide
-  }
-
-  // Inițializează sau actualizează Swiper cu noile opțiuni
-  if (swiper) {
-    swiper.destroy();
-  }
-
-  swiper = new Swiper(".mySwiper-products", {
-    slidesPerView: slidesPerView,
-    spaceBetween: 52, // Ajustează spațiul între carduri așa cum dorești
-    slidesPerGroup: slidesPerView,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
+swiper = new Swiper(".mySwiper-products", {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  centeredSlides: false,
+  centeredSlidesBounds: false,
+  initialSlide: 0, 
+  loop: false, 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2.8, 
+      spaceBetween: 10, 
+      slidesPerGroup: 2, 
+      initialSlide: 0, 
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+    900: {
+      slidesPerView: 3, 
+      spaceBetween: 10, 
+      slidesPerGroup: 1, 
+      initialSlide: 0, 
+    },
+    1000: {
+      slidesPerView: 4, 
+      spaceBetween: 10, 
+      slidesPerGroup: 3, 
+      initialSlide: 0, 
+    },
+    1800: {
+      slidesPerView: 6,
+      spaceBetween: 15, 
+      slidesPerGroup: 5, 
+      initialSlide: 0, 
     }
-  });
-}
-
-// Inițializează Swiper la încărcarea paginii
-window.addEventListener("load", function () {
-  initSwiper();
+  }
 });
 
-// Actualizează Swiper când se redimensionează fereastra
-window.addEventListener("resize", function () {
-  initSwiper();
-});

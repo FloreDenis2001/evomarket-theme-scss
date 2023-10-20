@@ -33,19 +33,18 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #141414;
+  background-color: #ffffff;
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   overflow-x: hidden; }
 
 img {
   max-height: 70%; }
 
 .heading__secondary {
-  font-size: 3rem;
-  margin: 0;
+  font-size: 4rem;
   padding-top: 1.5rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 0.2rem; }
 
 .swiper {
   width: 100%;
@@ -54,15 +53,12 @@ img {
   @media only screen and (max-width: 37.5em) {
     .swiper {
       max-height: 25rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .swiper {
-      width: 100%; } }
   @media only screen and (max-width: 75em) {
     .swiper {
       width: 100%; } }
   @media only screen and (min-width: 112.5em) {
     .swiper {
-      width: 60%; } }
+      min-width: 80%; } }
 
 .swiper-slide {
   text-align: center;
@@ -81,6 +77,21 @@ img {
     .swiper-slide img {
       max-height: 25rem; } }
 
+.swiper-pagination-bullet {
+  background: #ffffff;
+  font-size: 4rem;
+  width: 1.2rem;
+  height: 1rem;
+  border: 1px solid #fa4e4c;
+  opacity: 100%;
+  transition: all transform; }
+  .swiper-pagination-bullet:hover {
+    transform: scale(1.4);
+    background: #fa4e4c; }
+  @media only screen and (max-width: 37.5em) {
+    .swiper-pagination-bullet {
+      display: none; } }
+
 .swiper-pagination-bullet-active {
   background: #fa4e4c; }
 
@@ -88,15 +99,65 @@ img {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 110rem; }
   @media only screen and (max-width: 56.25em) {
     .mySwiper-products {
-      margin-left: 2rem;
-      width: 100%; } }
+      width: 100%;
+      max-width: 59rem; } }
   @media only screen and (max-width: 37.5em) {
     .mySwiper-products {
-      margin-left: 1.5rem;
       width: 100%; } }
+
+@media only screen and (min-width: 112.5em) {
+  .mySwiper--posters {
+    max-width: 55%; } }
+
+.wrapper-products {
+  padding-bottom: 5rem;
+  padding-inline: 5rem; }
+
+.swiper-button-next::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 4.5rem;
+  height: 3.5rem;
+  background-color: #d4d3d3;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  color: #fa4e4c; }
+  @media only screen and (max-width: 37.5em) {
+    .swiper-button-next::after {
+      display: none; } }
+  @media only screen and (max-width: 56.25em) {
+    .swiper-button-next::after {
+      display: none; } }
+  @media only screen and (max-width: 75em) {
+    .swiper-button-next::after {
+      display: none; } }
+
+.swiper-button-prev::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 4.5rem;
+  height: 3.5rem;
+  background-color: #d4d3d3;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  color: #fa4e4c; }
+  @media only screen and (max-width: 37.5em) {
+    .swiper-button-prev::after {
+      display: none; } }
+  @media only screen and (max-width: 56.25em) {
+    .swiper-button-prev::after {
+      display: none; } }
+  @media only screen and (max-width: 75em) {
+    .swiper-button-prev::after {
+      display: none; } }
 
 button {
   border: none;
@@ -114,9 +175,9 @@ button {
   border: 1px solid #ffffff;
   position: relative;
   border-radius: 0.5rem;
-  min-width: 27rem;
-  max-width: 27rem;
-  min-height: 37rem; }
+  min-width: 22rem;
+  max-width: 22rem;
+  min-height: 35rem; }
   @media only screen and (max-width: 75em) {
     .card {
       min-width: 20rem;
@@ -129,12 +190,18 @@ button {
       max-width: 18rem;
       min-height: 22rem;
       max-height: 24rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      min-width: 15rem;
+      max-width: 15rem;
+      min-height: 18rem;
+      max-height: 20rem; } }
   .card__details {
     margin-left: 0.5rem;
     transform: translateY(-0.5rem); }
   .card__img {
     width: 100%;
-    height: 20rem;
+    height: 18rem;
     grid-row: 1 / 1;
     grid-column: 1 / -1;
     border-radius: 0.5rem; }
@@ -144,10 +211,13 @@ button {
     @media only screen and (max-width: 56.25em) {
       .card__img {
         height: 11rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__img {
+        height: 9rem; } }
   .card__title {
     padding-block: 0.4rem;
     color: #141414;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     grid-row: 2 / 3;
     grid-column: 1 / -1;
@@ -161,11 +231,15 @@ button {
     @media only screen and (max-width: 56.25em) {
       .card__title {
         font-size: 1.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__title {
+        font-size: 1.3rem;
+        font-weight: 700; } }
   .card__stock {
     display: flex;
     align-items: center;
     margin-left: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     font-weight: 800;
@@ -176,6 +250,10 @@ button {
     @media only screen and (max-width: 56.25em) {
       .card__stock {
         font-size: 1.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__stock {
+        font-size: 1.3rem;
+        font-weight: 700; } }
   .card__stock i {
     color: green;
     margin-right: 2px; }
@@ -184,7 +262,7 @@ button {
     align-items: center;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     grid-row: 4 / 5;
     grid-column: 1 / 2; }
     @media only screen and (max-width: 75em) {
@@ -193,6 +271,10 @@ button {
     @media only screen and (max-width: 56.25em) {
       .card__stars {
         font-size: 1.4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__stars {
+        font-size: 1.3rem;
+        font-weight: 700; } }
   .card__stars i {
     color: goldenrod; }
   .card__price {
@@ -211,6 +293,10 @@ button {
     @media only screen and (max-width: 56.25em) {
       .card__price {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__price {
+        font-size: 2.2rem;
+        font-weight: 700; } }
   .card__button--buy {
     position: absolute;
     bottom: 1rem;
@@ -218,9 +304,9 @@ button {
     background: linear-gradient(180deg, #ff7f7b 0%, #fa4e4c 54%);
     color: white;
     font-weight: 800;
-    font-size: 2.5rem;
-    width: 5.5rem;
-    height: 4.5rem;
+    font-size: 2rem;
+    width: 4.5rem;
+    height: 3.5rem;
     border: none;
     border-radius: 5px 0px 5px 0px; }
     @media only screen and (max-width: 75em) {
@@ -237,10 +323,13 @@ button {
     cursor: pointer;
     position: absolute;
     right: 0.6rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     top: 0.4rem;
     color: #ffffff;
     -webkit-text-stroke: 0.1vw #fa4e4c; }
+    @media only screen and (max-width: 37.5em) {
+      .card__fav {
+        -webkit-text-stroke: 0.25vw #fa4e4c; } }
     .card__fav:hover, .card__fav:active {
       color: #fa4e4c; }
 
@@ -271,7 +360,7 @@ button {
     border-radius: 10rem;
     padding-left: 2rem;
     font-family: "Red Hat Display", sans-serif;
-    font-weight: 800; }
+    font-weight: 400; }
   .search-box__button {
     position: absolute;
     background: #ff7f7b;
@@ -331,7 +420,7 @@ button {
     color: #ffffff;
     font-size: 1.6rem;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,7 +433,7 @@ button {
       border: 2px solid #fa4e4c;
       border-radius: 10rem; }
   .meniuBar__link i {
-    font-size: 3rem; }
+    font-size: 2rem; }
     @media only screen and (max-width: 75em) {
       .meniuBar__link i {
         font-size: 2.5rem; } }
@@ -372,6 +461,12 @@ button {
 .meniuBar__list li:hover .dropdown__main {
   display: block; }
 
+.down-arrow {
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  text-align: center; }
+
 .navigation__desktop {
   align-content: center;
   flex-direction: row;
@@ -398,7 +493,7 @@ button {
     text-decoration: none;
     font-size: 3rem; }
   .navigation__desktop__link i {
-    font-size: 3rem; }
+    font-size: 2rem; }
   .navigation__desktop__link span {
     font-size: 1.6rem;
     margin-left: 1rem; }
@@ -440,15 +535,24 @@ button {
   margin-block: 2rem;
   display: flex;
   flex-direction: column;
-  text-align: flex-start; }
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 .category h2 {
-  margin-left: 12%;
-  color: white; }
+  padding-inline: 2rem;
+  max-width: 40rem;
+  margin-bottom: 3rem;
+  color: #141414;
+  font-weight: 400;
+  border-bottom: 2px solid #fa4e4c; }
   @media only screen and (max-width: 56.25em) {
     .category h2 {
-      margin-left: 12%;
-      font-size: 2rem; } }
+      font-size: 3rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .category h2 {
+      margin-bottom: 6rem;
+      font-size: 4rem; } }
 
 .carousel-inner {
   display: flex;
@@ -497,7 +601,10 @@ header {
   filter: brightness(0) invert(100%); }
 
 .posters {
-  background-color: #ffffff; }
+  background-color: #141414; }
+  @media only screen and (min-width: 112.5em) {
+    .posters {
+      padding-bottom: 4rem; } }
 
 .mainarea {
   min-width: 100%;

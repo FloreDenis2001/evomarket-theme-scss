@@ -1,4 +1,8 @@
 .posters {
-    background-color: $color-white;
-}
+    background-color: $color-black;
 
+
+    @include respond(big-desktop) {
+        padding-bottom: 4rem;
+    }
+}
